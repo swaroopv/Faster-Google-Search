@@ -7,3 +7,5 @@ How?
 Whenever you click on a link,  Google opens a generated URL and then re-directs back to clicked page.
 Google uses your click to update their algorithm.
 This extension by-passes this updating and opens your search result.
+
+For more information visit: https://chrome.google.com/webstore/detail/faster-google-search/fmhiafgdfaglfbaaefbbolaholfhkmjc
