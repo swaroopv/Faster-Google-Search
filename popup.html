@@ -1,0 +1,42 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+		width: 153px;
+		height: 40px;
+      }
+
+	  h5{
+		margin: 1px;
+	  }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    
+  </head>
+  <body>
+    <div id="container">
+		<div >
+			<h5>Open pages in new tab?</h5>
+			<label>yes</label><input type=radio name=newTab id=newTabYes value=Yes>
+			<label>no</label><input type=radio value=No id=newTabNo name=newTab  checked>
+		</div>	
+	</div>
+	<script src="popup.js"></script>
+  </body>
+</html>
+

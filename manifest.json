@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Faster Google search",
+  "description": " This extension helps in opening the Google result pages faster",
+  "version": "1.2",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  
+  "page_action": {
+    "default_icon": "lightning.png",
+    "default_popup": "popup.html",
+    "default_title": "Faster google search"
+  },
+  
+  "permissions": [
+    "declarativeContent","storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "include_globs": ["https://www.google.*"],
+      "js": ["content_script.js"],
+	  "run_at": "document_end"
+    }
+  ]
+  
+}
